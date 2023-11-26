@@ -7,12 +7,8 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <form method="POST" action="/book-cover-image-upload" enctype="multipart/form-data">
-    <div>
-    <label for="formFileLg" class="form-label">Upload File</label>
-    <input class="form-control form-control-lg" name="book-cover-image" required id="formFileLg" type="file" accept=".png, .jpeg, .jpg">
-    <button type="submit" class="btn btn-primary btn-lg mt-4">Submit</button>
+    <img src="<%= '/images/' + image_url %>"/><br>
+    <a href="/" class="btn btn-primary btn-lg mt-4">Home</a>
   </div>
     </form>
   
